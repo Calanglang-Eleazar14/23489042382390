@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Millimeter converter</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<style>
+* {
+  text-align: center;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center th {
+  padding: 40px;
+}
+
+body {
+background-color:#FFFFFF;
+}
+</style>
+
+<body><br><br>
+  <img src="https://thumbs.dreamstime.com/b/industrial-tape-measure-27496909.jpg" width="250px">
+  <h1>Length Converter for Millimeter</h1>
+<table class="center">
+  <tr>
+    <th style="background-color:#8C2723">Millimeter
+      <p><input type="text" id="Millimeter"></p>
+      <input type="button" class="btn btn-danger" onClick="MMCM()" value="To Centimeters">
+      <input type="button" class="btn btn-danger" onClick="MMM()" value="To Meters">
+      <input type="button" class="btn btn-danger" onClick="MMKM()" value="To Kilometers">
+    </th>
+<script>
+/*1stTable*/
+  function MMCM(){
+    var x, y
+    x = (document.getElementById('Millimeter').value);
+    y = 10;   
+    alert(x / y);
+  }
+  function MMM(){
+    var x, y
+    x = (document.getElementById('Millimeter').value);
+    y = 1000;   
+    alert(x / y);
+  }
+
+  function MMKM(){
+    var x, y 
+    x = (document.getElementById('Millimeter').value);
+    y = 1000000;    
+    alert(x / y);
+  }
+
+</script>
+</html>
